@@ -1,0 +1,405 @@
+
+/*Global Configuration*/
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: "MS Sans Serif", sans-serif;
+}
+
+pre{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+nav{
+    display: flex;
+    gap: 100px;
+}
+
+nav button{
+    width: 150px;
+    height: 30px;
+}
+
+section {
+    display: none;
+    min-height: 100vh;
+    width: 100%;
+    padding-top: 20px;
+
+    background-size: 100% 100%; 
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+/*Global Configuration*/
+
+/*Home section*/
+
+#home nav button{
+    cursor: url(../img/Cursors/hand-m.cur), pointer;
+}
+
+#home{
+    display:block;
+
+    min-height: 3700px;
+
+    background-image:url(../img/Win98_back.jpg);
+
+    background-size:100%;
+    background-repeat:no repeat;
+
+    cursor: url(../img/Cursors/arrow_d.cur), auto;
+}
+
+#home .container1{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+}
+
+#window1,
+#window2,
+#window3,
+#window4,
+#window5,
+#window6,
+#warning,
+#music_home,
+.stikers img,
+.gifs img,
+.error_windows{
+    position: absolute;
+}
+
+#window1{
+    top: 40px;
+    right: 270px;
+
+    transform: rotate(-3deg);
+}
+
+#window2{
+    top: 260px;
+    left: 500px;
+
+    transform: rotate(10deg);
+}
+
+#window3{
+    top: 879px;
+    left: 455px;
+
+    transform: rotate(8deg);
+}
+
+#window4{
+    top: 1215px;
+    right: 238px;
+
+    transform: rotate(2deg);
+}
+
+#window5{
+    top: 520px;
+    left: 180px;
+}
+
+#window6{
+    top: 1680px;
+    left: 495px;
+}
+
+#warning{
+    top: 3000px;
+    left: 650px;
+}
+
+#music_home{
+    top: 2185px;
+    left: 180px;
+}
+
+
+.error_windows{
+    height: 300px;
+    top: 3800px;
+    left: 650px;
+}
+
+#home .help_button{
+    cursor: url(../img/Cursors/help_d.cur), pointer;
+}
+
+#home .min_button{
+    cursor: url(../img/Cursors/hand-m.cur), pointer;
+}
+
+#home .max_button{
+    cursor: url(../img/Cursors/hand-m.cur), pointer;
+}
+
+#home .close_button{
+    cursor: url(../img/Cursors/hand-m.cur), pointer;
+}
+
+#title {
+    font-size: 60px;
+    color: blue;
+    text-align: center;
+}
+
+#oc_img{
+    width: 230px;
+    height: 200px;
+    max-width: 100%;
+}
+
+#likes_img{
+    width: 460px;
+    height: 250px;
+}
+
+#audio_img {
+    width: 460px;
+    height: 250px;
+}
+
+#guest_img{
+    width: 350px;
+    height: 420px;
+}
+
+#credits_img{
+    width: 380px;
+    height: 250px;
+}
+
+#ralsei_gif{
+
+    width: 200px;
+    height: 200px;
+
+    top: 330px;
+    left: 220px;
+}
+
+#monokuma_gif{
+    width: 150px;
+    height: 150px;
+
+    top: -110px;
+    right: 340px;
+
+    transform: rotate(-5deg);
+}
+
+#isaac_gif{
+    width: 150px;
+    height: 150px;
+
+    top: 1075px;
+    right: 360px;
+}
+
+#madeline_gif{
+    width: 50px;
+    height: 50px;
+
+    top: -135px;
+    right: 625px;
+}
+
+#niko_gif{
+    width: 50px;
+    height: 50px;
+
+    top: -135px;
+    left: 605px;
+}
+
+#cat_gif{
+    width: 200px;
+    height: 200px;
+
+    top: 1490px;
+    left: 600px;
+}
+
+#mario_gif{
+    width: 150px;
+    height: 150px;
+
+    top: 2650px;
+    left: 700px;
+}
+
+#arrows_gif1{
+    width: 200px;
+    height: 200px;
+
+    top: 2700px;
+    left: 50px;
+}
+
+#arrows_gif2{
+    width: 200px;
+    height: 200px;
+
+    top: 2700px;
+    right: 50px;
+}
+
+#computador_gif{
+    width: 200px;
+    height: 200px;
+
+    top: 3550px;
+    left: 100px;
+}
+
+#pikachu_gif{
+    width: 300px;
+    height: 200px;
+
+    top: 3700px;
+    left: 650px;
+}
+
+#mage_gif{
+    width: 200px;
+    height: 200px;
+
+    top: 3550px;
+    right: 100px;
+}
+
+.music_player #dancing_gif{
+    width: 300px;
+    height: 200px;
+}
+.music_player{
+    align-items: center;
+}
+#cloud_img{
+    width: 160px;
+    height: 160px;
+
+    top: 380px;
+    left: 350px;
+}
+
+#construc_img{
+    width: 1512px;
+    height: 300px;
+
+    top: 3400px;
+}
+
+#worker_img{
+    width: 100px;
+    height: 100px;
+
+    top: 3980px;
+    left: 150px;
+}
+
+#worker2_img{
+    width: 150px;
+    height: 150px;
+
+    top: 3940px;
+    right: 150px;
+}
+
+.window-body a{
+    display: block;
+    text-align: center;
+}
+
+/*Home section*/
+
+/*Me section*/
+
+#me nav button{
+    cursor: url(../img/Cursors/Hacker_cursor.cur), pointer;
+}
+
+#me{
+    background-image: url(../img/Delta_Back.jpg);
+
+    cursor: url(../img/Cursors/Deltarune_heart.cur), auto;
+}
+
+
+
+/*Me section*/
+
+/*Likes section*/
+
+#likes nav button{
+    cursor: url(../img/Cursors/jojo_cursor.cur), pointer;
+}
+
+#likes{
+    background-image: url(../img/Terraria_Back.png);
+
+    cursor: url(../img/Cursors/Terra_cursor.cur), auto;
+}
+
+/*Likes section*/
+
+/*Cats section*/
+
+#cats nav button{
+    cursor: url(../img/Cursors/Cat1_cursor.cur), pointer;
+}
+
+#cats{
+    background-image: url(../img/Toro_Back.jpg);
+
+    cursor: url(../img/Cursors/Cat_cursor.cur), auto;
+}
+
+/*Cats section*/
+
+/*Guest section*/
+
+#guest{
+    background-image: url();
+}
+
+/*Guest section*/
+
+/*Ascii section*/
+
+#ascii nav button{
+    cursor: url(../img/Cursors/Ascii1_cursor.cur), pointer;
+}
+
+#ascii{
+    background-color: black;
+
+    cursor: url(../img/Cursors/Ascii_cursor.cur), auto;
+}
+
+/*Ascii section*/
+
+/*Credits section*/
+
+#credits nav button{
+    cursor: url(../img/Cursors/Asuka_cursor.cur), pointer;
+}
+
+#credits{
+    background-image: url(../img/Evangelion_Back.webp);
+
+    cursor: url(../img/Cursors/Shinji_cursor.cur), auto;
+}
+
+/*Credits section*/

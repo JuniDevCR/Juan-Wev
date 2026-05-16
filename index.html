@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="I'm going to show all the things that I like">
+    <title>JuniWeb</title>
+
+    <!--Libreria de Win98-->
+    <link rel="stylesheet" href="https://unpkg.com/98.css">
+
+    <!--Mi Css-->
+    <link rel="stylesheet" href="css/Style.css">
+
+    <!--OG varas-->
+    <meta property="og:title" content="Juni | Web Developer">
+    <meta property="og:description" content="Just a web to show my likes.">
+    <meta property="og:url" content="https://www.JuniWeb.com">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="JuniWebsite">
+    <meta property="og:locale" content="en_US">
+
+    <!--Imagen OG-->
+    <meta property="og:image" content="https://i.pinimg.com/736x/c1/3a/2c/c13a2cc0f8c74cd8308b7e4c2fea0d59.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:type" content="image/jpg">
+    <meta property="og:image:alt" content="Preview of my website">
+    <script defer>
+        function showPage(pageId){
+        document.querySelectorAll("section").forEach(section => {
+        section.style.display = "none";
+    });
+        document.getElementById(pageId).style.display = "block";
+                }
+
+    </script>
+
+
+</head>
+
+<body>
+
+    <main>
+        <section id="home">
+
+        <nav>
+            <button onclick="showPage('home')">
+                Home
+            </button>
+            <button onclick="showPage('me')">
+                Me
+            </button>
+            <button onclick="showPage('likes')">
+                Likes
+            </button>
+            <button onclick="showPage('cats')">
+                Cats
+            </button>
+            <button onclick="showPage('guest')">
+                GuestBook
+            </button>
+            <button onclick="showPage('ascii')">
+                Ascii
+            </button>
+            <button onclick="showPage('credits')">
+                Credits
+            </button>
+        </nav>
+
+        <h1 id="title">Juni's Corner</h1>
+
+        <div class="container1">
+
+        <div id="window1">
+            <div class="window" style="width: 250px">
+                <div class="title-bar">
+                    <div class="title-bar-text">The WebMaster</div>
+                        <div class="title-bar-controls">
+                            <button class="help_button" aria-label="Help"></button>
+                            <button class="close_button " aria-label="Close"></button></button>
+            </div>
+                </div>
+                        <div class="window-body">
+                            <img id="oc_img" src="img/Oc_Creator.jpg" alt="My oc character">
+                            <a onclick="showPage('me')">
+                                More about me
+                            </a>
+                        </div>
+                    </div>
+        </div>
+
+        <div id="window2">
+            <div class="window" style="width: 480px">
+                <div class="title-bar">
+                    <div class="title-bar-text">Thing I love</div>
+                        <div class="title-bar-controls">
+                            <button class="min_button" aria-label="Minimize"></button>
+                            <button class="max_button" aria-label="Maximize"></button>
+                            <button class="close_button" aria-label="Close"></button>
+            </div>
+                </div>
+                        <div class="window-body">
+                            <img id="likes_img" src="img/Image_Likes.jpg" alt="A lot of characters of indie culture">
+                            <a onclick="showPage('likes')">
+                                Likes
+                            </a>
+                        </div>
+                    </div>
+        </div>
+
+        <div id="window3">
+            <div class="window" style="width: 480px">
+                <div class="title-bar">
+                    <div class="title-bar-text">My friendos</div>
+                        <div class="title-bar-controls">
+                            <button class="min_button" aria-label="Minimize"></button>
+                            <button class="max_button" aria-label="Maximize"></button>
+                            <button class="close_button" aria-label="Close"></button>
+            </div>
+                </div>
+                        <div class="window-body">
+                            <img id="audio_img" src="img/Cats_audio.jpg" alt="A cat riding on a unicorn with a golden gun and explosions">
+                            <a onclick="showPage('cats')">
+                                Cats
+                            </a>
+                        </div>
+                    </div>
+        </div>
+
+        <div id="window4">
+            <div class="window" style="width: 370px">
+                <div class="title-bar">
+                    <div class="title-bar-text">GuestBook</div>
+                        <div class="title-bar-controls">
+                            <button class="min_button" aria-label="Minimize"></button>
+                            <button class="max_button" aria-label="Maximize"></button>
+                            <button class="close_button" aria-label="Close"></button>
+            </div>
+                </div>
+                        <div class="window-body">
+                            <img id="guest_img" src="img/Wizard_Cool.jpg" alt="A magical cool wizard floating in a skateboard in rainbow">
+                            <a onclick="showPage('guest')">
+                                GuestBook
+                            </a>
+                        </div>
+                    </div>
+        </div>
+
+        <div id="window5">
+            <div class="window" style="width: 300px">
+                <div class="title-bar">
+                    <div class="title-bar-text">Ascii Guide</div>
+                        <div class="title-bar-controls">
+                            <button class="min_button" aria-label="Minimize"></button>
+                            <button class="max_button" aria-label="Maximize"></button>
+                            <button class="close_button" aria-label="Close"></button>
+            </div>
+                </div>
+                        <div class="window-body">
+                            <pre>
+                .,-:;//;:=,
+          . :H@@@MM@M#H/.,+%;,
+       ,/X+ +M@@M@MM%=,-%HMMM@X/,
+     -+@MM; $M@@MH+-,;XMMMM@MMMM@+-
+    ;@M@@M- XM@X;. -+XXXXXHHH@M@M#@/.
+  ,%MM@@MH ,@%=             .---=-=:=,.
+  =@#@@@MX.,                -%HX$$%%%:;
+ =-./@M@M$                   .;@MMMM@MM:
+ X@/ -$MM/                    . +MM@@@M$
+,@M@H: :@:                    . =X#@@@@-
+,@@@MMX, .                    /H- ;@M@M=
+.H@@@@M@+,                    %MM+..%#$.
+ /MMMM@MMH/.                  XM@MH; =;
+  /%+%$XHH@$=              , .H@@@@MX,
+   .=--------.           -%H.,@@@@@MX,
+   .%MM@@@HHHXX$$$%+- .:$MMX =M@@MM%.
+     =XMMM@MM@MM#H;,-+HMM@M+ /MMMX=
+       =%@M@M#@$-.=$@MM@@@M; %M%=
+         ,:+$+-,/H#MMMMMMM@= =,
+               =++%%%%+/:-.
+                            </pre>
+                            <a onclick="showPage('ascii')">
+                                Ascii
+                            </a>
+                        </div>
+                    </div>
+        </div>
+
+        <div id="window6">
+            <div class="window" style="width: 400px">
+                <div class="title-bar">
+                    <div class="title-bar-text">Credits</div>
+                        <div class="title-bar-controls">
+                            <button class="min_button" aria-label="Minimize"></button>
+                            <button class="max_button" aria-label="Maximize"></button>
+                            <button class="close_button" aria-label="Close"></button>
+            </div>
+                </div>
+                        <div class="window-body">
+                            <img id="credits_img" src="img/Eva_picture.png" alt="A title with a black backgroud saying The End of The Web">
+                            <a onclick="showPage('credits')">
+                                Credits
+                            </a>
+                        </div>
+                    </div>
+        </div>
+
+
+        <div class="gifs">
+            <img id="ralsei_gif" src="img/Ralsei_gif.gif">
+            <img id="monokuma_gif" src="img/Monokuma_gif.webp">
+            <img id="isaac_gif" src="img/Isaac_gif.gif">
+            <img id="madeline_gif" src="img/Madeline_gif.gif">
+            <img id="niko_gif" src="img/Niko_gif.gif">
+            <img id="cat_gif" src="img/Cat_gif.webp">
+            <img id="mario_gif" src="img/Mario_gif.gif">
+            <img id="arrows_gif1" src="img/Arrows_gif.gif">
+            <img id="arrows_gif2" src="img/Arrows_gif.gif">
+            <img id="computador_gif" src="img/Computador_gif.webp">
+            <img id="pikachu_gif" src="img/Pikachu_gif.gif">
+            <img id="mage_gif" src="img/Mage_gif.webp">
+        </div>
+        </div>
+
+        <div class="stikers">
+            <img src="img/Cloud_text.png" id="cloud_img">
+            <img src="img/Construction_img.jpg" id="construc_img">
+            <img src="img/Worker_gif.jpg" id="worker_img">
+            <img src="img/Worker2_img.jpg" id="worker2_img">
+        </div>
+
+        <div class="music_player">
+            <div id="music_home">
+            <div class="window" style="width: 320px">
+                <div class="title-bar">
+                    <div class="title-bar-text">Mp3 Player</div>
+                        <div class="title-bar-controls">
+            </div>
+                </div>
+                        <div class="window-body">
+                            <img src="img/Dancing_gif.webp" id="dancing_gif">
+                            <audio autoplay muted controls>
+                                <source src="img/Music/Runescape_mp3.mp3" type="audio/mp3">
+                            </audio>
+                        </div>
+                    </div>
+        </div>
+        </div>
+
+        <div class="carousel">
+            <div class="images_Caro">
+
+            </div>
+        </div>
+
+        <div id="warning">
+        <div class="window" style="width: 300px">
+            <div class="title-bar">
+                <div class="title-bar-text">What are you doing here ?</div>
+                    <div class="title-bar-controls">
+                        <button onclick="this.closest('#warning').remove()" aria-label="Close"></button>
+                    </div>
+                </div>
+            <div class="window-body">
+            <p>There's literally anything here man just turn around and keep scrolling in all the sections in the web.</p>
+        </div>
+        </div>
+        </div>
+
+        <div class="error">
+
+    <div class="error_windows">
+        <div class="window" style="width: 300px">
+            <div class="title-bar">
+                <div class="title-bar-text">.......</div>
+
+                <div class="title-bar-controls">
+                    <button aria-label="Close"></button>
+                </div>
+            </div>
+
+            <div class="window-body">
+                <a href="#"></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="error_windows">
+        <div class="window" style="width: 300px">
+            <div class="title-bar">
+                <div class="title-bar-text">*Text doesn't found*</div>
+
+                <div class="title-bar-controls">
+                    <button onclick="this.closest('.error_windows').remove()" aria-label="Close"></button>
+                </div>
+            </div>
+
+            <div class="window-body">
+                <p>*Text doesn't found*</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="error_windows">
+        <div class="window" style="width: 300px">
+            <div class="title-bar">
+                <div class="title-bar-text">This is starting to feel very boring</div>
+
+                <div class="title-bar-controls">
+                    <button onclick="this.closest('.error_windows').remove()" aria-label="Close"></button>
+                </div>
+            </div>
+
+            <div class="window-body">
+                <p>Surrender ._.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="error_windows">
+        <div class="window" style="width: 300px">
+            <div class="title-bar">
+                <div class="title-bar-text">!Ha I was just kidding¡</div>
+
+                <div class="title-bar-controls">
+                    <button onclick="this.closest('.error_windows').remove()" aria-label="Close"></button>
+                </div>
+            </div>
+
+            <div class="window-body">
+                <p>Nope nothing here</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="error_windows">
+        <div class="window" style="width: 300px">
+            <div class="title-bar">
+                <div class="title-bar-text">Maybe in the next window?</div>
+
+                <div class="title-bar-controls">
+                    <button onclick="this.closest('.error_windows').remove()" aria-label="Close"></button>
+                </div>
+            </div>
+
+            <div class="window-body">
+                <p>*You feel like something is going to happen*</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="error_windows">
+        <div class="window" style="width: 300px">
+            <div class="title-bar">
+                <div class="title-bar-text">This shi is starting bothering me</div>
+
+                <div class="title-bar-controls">
+                    <button onclick="this.closest('.error_windows').remove()" aria-label="Close"></button>
+                </div>
+            </div>
+
+            <div class="window-body">
+                <p>Still nothing here</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="error_windows">
+        <div class="window" style="width: 300px">
+            <div class="title-bar">
+                <div class="title-bar-text">Bro just get out here</div>
+
+                <div class="title-bar-controls">
+                    <button onclick="this.closest('.error_windows').remove()" aria-label="Close"></button>
+                </div>
+            </div>
+
+            <div class="window-body">
+                <p>Nah don’t try it</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="error_windows">
+        <div class="window" style="width: 300px">
+            <div class="title-bar">
+                <div class="title-bar-text">There isn't anything here</div>
+
+                <div class="title-bar-controls">
+                    <button onclick="this.closest('.error_windows').remove()" aria-label="Close"></button>
+                </div>
+            </div>
+
+            <div class="window-body">
+                <p>Nope nothing here :3</p>
+            </div>
+        </div>
+    </div>
+
+</div>
+        
+
+        </section>
+<!--########################################################################################################################-->
+        <section id="me">
+            
+        <nav>
+
+            <button onclick="showPage('home')">
+                Home
+            </button>
+            <button onclick="showPage('me')">
+                Me
+            </button>
+            <button onclick="showPage('likes')">
+                Likes
+            </button>
+            <button onclick="showPage('cats')">
+                Cats
+            </button>
+            <button onclick="showPage('guest')">
+                GuestBook
+            </button>
+            <button onclick="showPage('ascii')">
+                Ascii
+            </button>
+            <button onclick="showPage('credits')">
+                Credtis
+            </button>
+
+        </nav>
+        
+        </section>
+<!--########################################################################################################################-->
+        <section id="likes">
+
+        <nav>
+            <button onclick="showPage('home')">
+                Home
+            </button>
+            <button onclick="showPage('me')">
+                Me
+            </button>
+            <button onclick="showPage('likes')">
+                Likes
+            </button>
+            <button onclick="showPage('cats')">
+                Cats
+            </button>
+            <button onclick="showPage('guest')">
+                GuestBook
+            </button>
+            <button onclick="showPage('ascii')">
+                Ascii
+            </button>
+            <button onclick="showPage('credits')">
+                Credtis
+            </button>
+
+        </nav>
+            
+            <h1>Likes</h1>
+        </section>
+<!--########################################################################################################################-->
+        <section id="cats">
+
+        <nav>
+            <button onclick="showPage('home')">
+                Home
+            </button>
+            <button onclick="showPage('me')">
+                Me
+            </button>
+            <button onclick="showPage('likes')">
+                Likes
+            </button>
+            <button onclick="showPage('cats')">
+                Cats
+            </button>
+            <button onclick="showPage('guest')">
+                GuestBook
+            </button>
+            <button onclick="showPage('ascii')">
+                Ascii
+            </button>
+            <button onclick="showPage('credits')">
+                Credtis
+            </button>
+
+        </nav>
+            <h1>Cats</h1>
+        </section>
+<!--########################################################################################################################-->
+        <section id="ascii">
+
+        <nav>
+
+            <button onclick="showPage('home')">
+                Home
+            </button>
+            <button onclick="showPage('me')">
+                Me
+            </button>
+            <button onclick="showPage('likes')">
+                Likes
+            </button>
+            <button onclick="showPage('cats')">
+                Cats
+            </button>
+            <button onclick="showPage('guest')">
+                GuestBook
+            </button>
+            <button onclick="showPage('ascii')">
+                Ascii
+            </button>
+            <button onclick="showPage('credits')">
+                Credtis
+            </button>
+
+        </nav>
+            <h1>Ascii</h1>
+        </section>
+<!--########################################################################################################################-->
+        <section id="guest">
+
+        <nav>
+
+            <button onclick="showPage('home')">
+                Home
+            </button>
+            <button onclick="showPage('me')">
+                Me
+            </button>
+            <button onclick="showPage('likes')">
+                Likes
+            </button>
+            <button onclick="showPage('cats')">
+                Cats
+            </button>
+            <button onclick="showPage('guest')">
+                GuestBook
+            </button>
+            <button onclick="showPage('ascii')">
+                Ascii
+            </button>
+            <button onclick="showPage('credits')">
+                Credtis
+            </button>
+
+        </nav>
+            <h1>Guest</h1>
+        </section>
+<!--########################################################################################################################-->
+        <section id="credits">
+
+        <nav>
+
+            <button onclick="showPage('home')">
+                Home
+            </button>
+            <button onclick="showPage('me')">
+                Me
+            </button>
+            <button onclick="showPage('likes')">
+                Likes
+            </button>
+            <button onclick="showPage('cats')">
+                Cats
+            </button>
+            <button onclick="showPage('guest')">
+                GuestBook
+            </button>
+            <button onclick="showPage('ascii')">
+                Ascii
+            </button>
+            <button onclick="showPage('credits')">
+                Credtis
+            </button>
+
+        </nav>
+            <h1>credits</h1>
+        </section>
+   
+    </main>
+
+    <footer class="my_info">
+    </footer>
+
+</body>
+</html>
+<!-- Añadir una parte de error que redirija a una seccion secreta que no esta en el buscador, hacerlo en home y con estilo win89-->
+<!--Quiero un reproductor de musica con mi musica y ost de videogames-->
+<!--O por cada seccion algo mini personalizado por cosa que me guste-->
+<!--Lo de los gatos con audios suena bieen y hay gente dispuesta xdd la vara tiene futuro-->
+<!--Tambien quiero una seccion con ascii art-->
+<!--Añadir un coso donde pasen las imagenes que yo quiera asi random de arriba para abajo y taal-->
+<!-- Añadir de musica la de runescape remix o algo asi al reproductor de home con una imagen xd y ya-->
